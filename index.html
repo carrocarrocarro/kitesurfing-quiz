@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Kite theoy quiz - VDWS">
+        <meta name="keywords" content="kitesurfing">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/style.css">
+        <title>A quiz app by Caroline Englund</title>
+    </head>
+    <body>
+        <!-- Sida som visas när webbsidan öppnas -->
+        <div id="page-loader">
+            <h1 id="app-name" >Kitesurfing Quiz App<h1>
+            <!-- En load bar som animeras när sidan laddas -->    
+            <div id="load-bar">
+                <div id="load-start"></div>
+            </div>
+        </div>
+        <!-- En wrapper för spelet och alla komponenter -->
+        <div id="game">
+
+            <!-- Huvud menyn -->
+            <div id="menu">
+                <button id="practise">Practise</button><!-- Knapp för att komma till övnings delen -->
+                <button id="vdws-quiz-btn">VDWS Kite Theory Test</button> <!-- Knapp för att komma till sluttestet-->
+                <p id="errorMessage">This function is not available yet.</p>
+                <!--<button id="highscore-btn">Highscore</button>
+                <button id="settings-btn">Settings</button>-->
+            </div>
+
+            <!-- Dessa två delar kommer jag arbeta vidare med efter kursens slut
+            <div id="highscore-wrapper"></div> Här ska användare kunna se sina resultat. För att låsa upp slut testet krävs det mer än 70% i varje övningstest. 
+            <div id="settings-wrapper"></div> Här ska användaren kunna välja språk till tyska och ställa i hur många frågor som ska visas varje ett övningstest körs. Frågorna ska slumpas så att ej samma frågor visas varje gång.
+            -->    
+            
+            <!-- Meny för övningsdelen. Här kan användaren öva utifrån olika kategorier -->
+            <div id="practise-menu">
+                <button id="back"><span id="arrow">&#8592;</span></button><!-- Knapp för att gå tillbaka till huvumenyn-->
+                <button id="wind-quiz">Wind</button> <!-- Knapp för att starta övnings test med frågor ifrån kategori vind -->
+                <button id="safety-quiz">Safety</button> <!-- Knapp för att starta övnings test med frågor ifrån kategori säkerhet -->
+                <button id="launch-quiz">Launch &amp; Land</button> <!-- Knapp för att starta övnings test med frågor ifrån kategori starta och landa -->
+                <button id="gear-quiz">Gear</button> <!-- Knapp för att starta övnings test med frågor ifrån kategori utrustning -->
+                <button id="right-way-quiz">Right of way rules</button> <!-- Knapp för att starta övnings test med frågor ifrån kategori väjningsregler -->
+            </div>
+
+            <!-- Container för quiz för övnings delen -->
+            <div id="quiz-wrapper" class="flex-center flex-dire-column">
+                <button id="stop-btn"><span id="close">&times;</span></button><!-- Knapp för att avbryta och gå tillbaka till huvumenyn-->
+                <div id="question-container" class="flex-center flex-dire-column"></div><!-- Container som innehåller frågorna och svarsalternativ -->
+                <div id="result-container" class="flex-center flex-dire-column"></div> <!-- Container som visar slutresultatet-->
+                <div id="btn-container"class="flex-center flex-dire-row"><!-- Container för knapparna för quizet -->
+                    <button id="submit-btn">Submit</button> <!-- Knapp för att avsluta och visa resultatet av tester-->
+                    <button id="next-btn">Next question</button><!-- Knapp för visa nästa fråga-->
+                    <button id="return-btn">Return to start</button><!--Knapp för att avsluta och gå tillbaka till övnings menyn -->
+                </div>
+            </div>
+
+            <!-- Conatiner för att verifera kod inför sluttest. Kod = 1234 -->
+            <div id="verify-code" class="flex-center flex-dire-column">
+                <button id="cancel-verify"><span id="close">&times;</span></button><!-- Knapp för att avbryta och gå tillbaka till huvumeny -->
+                <div class="flex-center flex-dire-column">
+                    <p>Please enter your verification code</p>
+                    <input type="text" id="verification-code"><!-- Textfält för inmatning av kod. -->
+                </div>
+                <button id="verify-btn">Verify</button><!--Knapp för att verifiera koden-->
+            </div>
+
+            <!-- Container för slut testet  -->
+            <div id="quiz-wrapper-vdws" class="flex-center flex-dire-column">
+                <button id="stop-btn-vdws"><span>&times;</span></button><!-- Knapp för att avbryta VDWS test -->
+                <div id="question-container-vdws" class="flex-center flex-dire-column"></div> <!-- Container för frågor och svarsalternativ -->
+                <div id="result-container-vdws" class="flex-center flex-dire-column"></div> <!-- Conatiner för resultat-->
+                <div class="flex-center flex-dire-row"> <!-- Container för knappar -->
+                    <button id="submit-btn-vdws">Submit</button> <!-- Knapp för att avsluta och visa resultatet av tester-->
+                    <button id="next-btn-vdws">Next question</button> <!-- Knapp för visa nästa fråga-->
+                    <button id="return-btn-vdws">Return to start</button> <!--Knapp för att avsluta och gå tillbaka till övnings menyn -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>Caroline Englund &copy; 2021</p>
+        </footer>
+
+        <!-- Alla script. Jag har valt att dela upp koden i olika block för att bättre hålla ordning-->
+        <script src="src/js/helper.js"></script><!-- Innehåller hjälpande funktioner -->
+        <script src="src/js/loader.js"></script><!-- Script start sidan och som animerar "loadbaren" -->
+        <script src="src/js/nav.js"></script> <!-- Script som styr huvudnavigationen --> 
+        <script src="src/js/quiz.js"></script> <!-- Script för övnings delen --> 
+        <script src="src/js/vdws-quiz.js"></script> <!-- Script för själva sluttestet -->
+   
+    </body>
+</html>

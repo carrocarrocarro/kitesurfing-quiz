@@ -1,0 +1,348 @@
+/*  reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*, html, body {
+    box-sizing: border-box;
+}
+
+/* Styling html */
+html {
+    min-height: 100vh;
+}
+
+/* Styling body */
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    color: #404040;
+}
+
+/* Styling footer */
+#footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling för knappar */
+button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.0rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #7D84B2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    border:none;
+  
+}
+
+button:focus {
+    /*border: none;*/
+    outline: none;
+}
+
+button:hover {
+    background-color: #8E9DCC;
+    cursor: pointer;
+}
+
+/* Knapp för att gå tillbaka ifrån övnings menyn */
+#back {
+    align-self: center;
+    padding:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+/* Styling av pilen */ 
+#arrow {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 0.6;
+}
+/* Hover styling */
+#back:hover {
+    background-color: #7D84B2;
+}
+
+/* Styling kontainer för spelet */
+#game {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+}
+
+/* Styling för huvud menyn */
+#menu { 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling för övningsmenyn */
+#practise-menu{
+    display:none;
+    flex-direction: column;
+}
+
+/* Klass för att centrera innehåll */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Klass för kolumn riktning */
+.flex-dire-column {
+    flex-direction: column;
+}
+
+/* Klass för kolumn rad riktning */
+.flex-dire-row {
+    flex-direction: row;
+}
+
+
+/*** Page loader ****/
+
+/* Konatiner för startsidan */
+#page-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Konatiner för loadbaren */
+#load-bar {
+    background-color:   aliceblue;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+/* Loadbaren utseende vi start som animeras med hjälp av js */
+#load-start {
+    width: 1%;
+    height: 20px;
+    background-color:#7D84B2;
+}
+
+/* Styling för huvudrubrik*/
+#app-name {
+    font-size: 2rem;
+}
+
+
+/***** Verify code ****/
+
+/* Konatiner för att verifiera kod */
+#verify-code {
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* Styling av innhåll i kontainer för att verifiera kod */
+#verify-code div {
+    padding: 20px;
+}
+
+/* Inmatnings fält för att mata in kod som ska verifieras */
+#verification-code {
+    margin-top: 20px;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Focus styling */
+#verification-code:focus {
+    outline:none;
+    border: 2px solid #7D84B2;
+}
+
+
+/* Quizes*/ 
+
+
+/* Styling för de två konatinerna som visar själva quizen */
+#quiz-wrapper, #quiz-wrapper-vdws{
+    display: none;
+    background-color: #FFF;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+/* Konatiner för frågor */
+#question-container {
+    background-color: #FFF;
+    padding-bottom: 20px;
+    max-width: 80vw;
+    padding: 40px 40px;
+}
+
+/* Kontainer för resultat*/
+#result-container, #result-conatiner-vdws {
+    display: none;
+    background-color: #FFF;
+    padding: 50px;
+}
+/* Knappar */
+#submit-btn, #submit-btn-vdws, #return-btn, #return-btn-vdws {
+    display: none;
+}
+
+/* Stling stopp-knappar (krysset)*/
+#stop-btn, #cancel-verify, #stop-btn-vdws {
+    margin: 0;
+    padding:0;
+    letter-spacing: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; 
+    background-color: grey;
+    align-self: flex-end;
+}
+/* Hover effect för stoppas knappar */
+#stop-btn:hover, #cancel-verify:hover, #stop-btn-vdws:hover  {
+    background-color: #7D84B2;
+}
+
+/* Styling kontainer för frågor */
+.questions {
+    display: none;
+}
+
+/* Styling för fråge nummer */
+.question-number {
+    align-self: center;
+    background-color: #8E9DCC;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Styling för själva fråggan */
+.question {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    /*text-align: center;*/
+    line-height: 1.5;
+
+}
+/* Styling frågan och konatiner innehållande svaralternativen */
+.option-box, .question {
+    padding: 0 0 10px 0;
+}
+
+/* Styling för error meddelande */
+.error-message {
+    display: none;
+    color: red;
+}
+
+#errorMessage {
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+}
+
+/* Detta kommr jag att jobba vidare senare 
+#highscore-wrapper {
+    display: none;
+}
+
+#settings-wrapper {
+    display: none;
+}*/
+
+@media (min-width:600px) {
+    #quiz-wrapper, #quiz-wrapper-vdws{
+        max-width: 700px;
+    }
+}
+

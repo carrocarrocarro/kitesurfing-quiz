@@ -1,0 +1,388 @@
+[{
+	"wind_theory": [{
+			"question": "Which of the following two windirections are safe for kitesurfsing?",
+			"options": [
+				"Offshore",
+				"Sideshore"
+			],
+			"answer": [
+				"Sideshore"
+			]
+		},
+		{
+			"question": "What is consider a safe windrange for kitesurfers?",
+			"options": [
+				"10-25 knots",
+				"15-35 knots"
+			],
+			"answer": [
+				"10-25 knots"
+			]
+		},
+		{
+			"question": "How much is 1 knot in m/s?",
+			"options": [
+				"0.514 m/s",
+				"0.999 m/s"
+			],
+			"answer": [
+				"0.514 m/s"
+			]
+		},
+		{
+			"question": "How much is 5 Bft in knots?",
+			"options": [
+				"11-16 knots",
+				"17-21 knots"
+			],
+			"answer": [
+				"17-21 knots"
+			]
+		},
+		{
+			"question": "Where do you have most power in the windwindow?",
+			"options": [
+				"Softzone",
+				"Powerzone"
+			],
+			"answer": [
+				"Powerzone"
+			]
+		},
+		{
+			"question": "If the wind is low? Do you need a smaller or a bigger kite?",
+			"options": [
+				"Bigger",
+				"Smaller"
+			],
+			"answer": [
+				"Bigger"
+			]
+		},
+		{
+			"question": "What significes offshore wind?",
+			"options": [
+				"The is gusty and often changes direction.",
+				"The wind is smooth and nice."
+			],
+			"answer": [
+				"The is gusty and often changes direction."
+			]
+		},
+		{
+			"question": "How can you prevent a backstall of the kite?",
+			"options": [
+				"Pull the bar more down.",
+				"Push the bar away from your body."
+			],
+			"answer": [
+				"Push the bar away from your body."
+			]
+		},
+		{
+			"question": "How can you prevent a frontstall of the kite?",
+			"options": [
+				"Keep the kite moving.",
+				"Keep the kite still at one position."
+			],
+			"answer": [
+				"Keep the kite moving."
+			]
+		},
+		{
+			"question": "Is gusty wind or smooth wind better to practice kitesurfing in?",
+			"options": [
+				"Gusty.",
+				"Smooth."
+			],
+			"answer": [
+				"Smooth."
+			]
+		},
+		{
+			"question": "Is it better for beginners to use bigger or smaller kite boards?",
+			"options": [
+				"Small boards.",
+				"Bigger boards."
+			],
+			"answer": [
+				"Bigger boards."
+			]
+		},
+		{
+			"question": "Is it better for beginners to use bigger or smaller kite boards?",
+			"options": [
+				"Small boards.",
+				"Bigger boards."
+			],
+			"answer": [
+				"Bigger boards."
+			]
+		},
+		{
+			"question": "How can you find out where the wind direction?",
+			"options": [
+				"By looking at the flag on the beach, how threes are moving or throw some sand in the air.",
+				"The weather app in my phone."
+			],
+			"answer": [
+				"By looking at the flag on the beach, how threes are moving or throw some sand in the air."
+			]
+		},
+		{
+			"question": "Where do you have the least power in the windwindow.",
+			"options": [
+				"Powerzone.",
+				"Softzone."
+			],
+			"answer": [
+				"Softzone."
+			]
+		}
+	],
+	"safety_theory": [{
+			"question": "Can you kite alone?",
+			"options": [
+				"Yes, if I'm an experienced kitesurfer.",
+				"No, you should always bring someone with you."
+			],
+			"answer": [
+				"No, you should always bring someone with you."
+			]
+		},
+		{
+			"question": "What should you check before going on the water?",
+			"options": [
+				"Which of your kite matching your harness.",
+				"How strong the wind is."
+			],
+			"answer": [
+				"How strong the wind is."
+			]
+		},
+		{
+			"question": "How does the 3-step security systems works?",
+			"options": [
+				"0.514 m/s",
+				"0.999 m/s"
+			],
+			"answer": [
+				"0.514 m/s"
+			]
+		},
+		{
+			"question": "How much is 5 Bft in knots?",
+			"options": [
+				"11-16 knots",
+				"17-21 knots"
+			],
+			"answer": [
+				"17-21 knots"
+			]
+		},
+		{
+			"question": "Where do you have most power in the windwindow?",
+			"options": [
+				"Softzone",
+				"Powerzone"
+			],
+			"answer": [
+				"Powerzone"
+			]
+		},
+		{
+			"question": "If the wind is low? Do you need a smaller or a bigger kite?",
+			"options": [
+				"Bigger",
+				"Smaller"
+			],
+			"answer": [
+				"Bigger"
+			]
+		}
+		
+	],
+	"launch_theory": [{
+			"question": "Is it considered safe to launch and land on your own?",
+			"options": [
+				"No",
+				"Yes"
+			],
+			"answer": [
+				"No"
+			]
+		},
+		{
+			"question": "What is consider a safe windrange for kitesurfers?",
+			"options": [
+				"10-25 knots",
+				"15-35 knots"
+			],
+			"answer": [
+				"10-25 knots"
+			]
+		},
+		{
+			"question": "How much is 1 knot in m/s?",
+			"options": [
+				"0.514 m/s",
+				"0.999 m/s"
+			],
+			"answer": [
+				"0.514 m/s"
+			]
+		},
+		{
+			"question": "How much is 5 Bft in knots?",
+			"options": [
+				"11-16 knots",
+				"17-21 knots"
+			],
+			"answer": [
+				"17-21 knots"
+			]
+		},
+		{
+			"question": "Where do you have most power in the windwindow?",
+			"options": [
+				"Softzone",
+				"Powerzone"
+			],
+			"answer": [
+				"Powerzone"
+			]
+		},
+		{
+			"question": "If the wind is low? Do you need a smaller or a bigger kite?",
+			"options": [
+				"Bigger",
+				"Smaller"
+			],
+			"answer": [
+				"Bigger"
+			]
+		}
+	],
+	"gear_theory": [{
+			"question": "Can you always ride barefoot in summer?",
+			"options": [
+				"Yes, it's warm.",
+				"No it might be shells in the water."
+			],
+			"answer": [
+				"No it might be shells in the water."
+			]
+		},
+		{
+			"question": "What is consider a safe windrange for kitesurfers?",
+			"options": [
+				"10-25 knots",
+				"15-35 knots"
+			],
+			"answer": [
+				"10-25 knots"
+			]
+		},
+		{
+			"question": "How much is 1 knot in m/s?",
+			"options": [
+				"0.514 m/s",
+				"0.999 m/s"
+			],
+			"answer": [
+				"0.514 m/s"
+			]
+		},
+		{
+			"question": "How much is 5 Bft in knots?",
+			"options": [
+				"11-16 knots",
+				"17-21 knots"
+			],
+			"answer": [
+				"17-21 knots"
+			]
+		},
+		{
+			"question": "Where do you have most power in the windwindow?",
+			"options": [
+				"Softzone",
+				"Powerzone"
+			],
+			"answer": [
+				"Powerzone"
+			]
+		},
+		{
+			"question": "If the wind is low? Do you need a smaller or a bigger kite?",
+			"options": [
+				"Bigger",
+				"Smaller"
+			],
+			"answer": [
+				"Bigger"
+			]
+		}
+	],
+	"rules_theory": [{
+			"question": "You (kiter A) are leeward from another kiter (kiter B). Who has to give way?",
+			"options": [
+				"Kiter A",
+				"Kiter B"
+			],
+			"answer": [
+				"Kiter B"
+			]
+		},
+		{
+			"question": "What is consider a safe windrange for kitesurfers?",
+			"options": [
+				"10-25 knots",
+				"15-35 knots"
+			],
+			"answer": [
+				"10-25 knots"
+			]
+		},
+		{
+			"question": "How much is 1 knot in m/s?",
+			"options": [
+				"0.514 m/s",
+				"0.999 m/s"
+			],
+			"answer": [
+				"0.514 m/s"
+			]
+		},
+		{
+			"question": "How much is 5 Bft in knots?",
+			"options": [
+				"11-16 knots",
+				"17-21 knots"
+			],
+			"answer": [
+				"17-21 knots"
+			]
+		},
+		{
+			"question": "Where do you have most power in the windwindow?",
+			"options": [
+				"Softzone",
+				"Powerzone"
+			],
+			"answer": [
+				"Powerzone"
+			]
+		},
+		{
+			"question": "If the wind is low? Do you need a smaller or a bigger kite?",
+			"options": [
+				"Bigger",
+				"Smaller"
+			],
+			"answer": [
+				"Bigger"
+			]
+		}
+	]
+}]
